@@ -18,5 +18,5 @@ plugins {
     id("org.gradle.toolchains.foojay-resolver-convention") version "0.9.0"
 }
 
-rootProject.name = "Semaphore"
+rootProject.name = "semaphore"
 include("lib")
