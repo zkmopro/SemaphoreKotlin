@@ -19,6 +19,7 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
+            - uses: actions/checkout@v4
             - name: Setup Java
               uses: actions/setup-java@v4
               with:
@@ -27,9 +28,7 @@ jobs:
             - name: Setup Android SDK
               uses: android-actions/setup-android@v2.0.10
             - name: Build android app
-              run: |
-                chmod +x gradlew
-                ./gradlew build
+              run: ./gradlew build
             - name: Run tests
               uses: reactivecircus/android-emulator-runner@v2
               with:
