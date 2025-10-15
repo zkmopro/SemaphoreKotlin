@@ -65,7 +65,7 @@ dependencies {
 // Configure Android test options
 android {
     namespace = "com.github.zkmopro"
-    compileSdk = 35
+    compileSdk = 34
     
     defaultConfig {
         minSdk = 33

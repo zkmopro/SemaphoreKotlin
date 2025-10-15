@@ -1,4 +1,4 @@
-package uniffi.mopro
+package com.github.zkmopro
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
@@ -57,6 +57,7 @@ class SemaphoreTest {
         assertArrayEquals(groupRoot, byteArray)
     }
 
+    @Test
     fun testSemaphoreProof() {
         val message = "message"
         val scope = "scope"
